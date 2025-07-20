@@ -1,94 +1,5 @@
 
 
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Pagination, Autoplay } from "swiper/modules";
-// import "swiper/css";
-// import "swiper/css/pagination";
-// import { FaQuoteLeft } from "react-icons/fa";
-
-// const testimonials = [
-//   {
-//     name: "Sadia Rahman",
-//     role: "HR Executive, TechFlow Ltd.",
-//     feedback:
-//       "WorkSync Pro has streamlined our employee management system! Payroll and verification are now stress-free.",
-//     photo: "https://i.ibb.co/Nsc8mmK/testimonial1.jpg",
-//   },
-//   {
-//     name: "Tanvir Hasan",
-//     role: "Senior Developer, DevHouse",
-//     feedback:
-//       "This platform is so easy to use and manage. I can submit work logs and track salary status without hassle.",
-//     photo: "https://i.ibb.co/2tfrzLj/testimonial2.jpg",
-//   },
-//   {
-//     name: "Maria Islam",
-//     role: "Admin, Softnix Solutions",
-//     feedback:
-//       "Managing HR operations has never been smoother. I highly recommend WorkSync Pro for growing teams!",
-//     photo: "https://i.ibb.co/SfMH09r/testimonial3.jpg",
-//   },
-// ];
-
-// const Testimonials = () => {
-//   return (
-//     <section className="py-16 bg-base-100">
-//       <div className="w-11/12 mx-auto text-center">
-//         <div className="mb-12">
-//           <FaQuoteLeft className="text-4xl mx-auto text-primary mb-4" />
-//           <h2 className="text-3xl md:text-4xl font-bold">What our customers are saying</h2>
-//           <p className="text-gray-500 mt-2 max-w-xl mx-auto">
-//             Enhance posture, mobility, and well-being effortlessly with WorkSync Pro. Simplify management and boost your team's productivity!
-//           </p>
-//         </div>
-
-//         <Swiper
-//           modules={[Pagination, Autoplay]}
-//           slidesPerView={3}
-//           centeredSlides={true}
-//           spaceBetween={30}
-//           pagination={{ clickable: true }}
-//           autoplay={{ delay: 4000 }}
-//           loop={true}
-//           className="pb-10"
-//         >
-//           {testimonials.map((item, index) => (
-//             <SwiperSlide key={index}>
-//               <div className="bg-white shadow-lg rounded-xl p-6 max-w-sm mx-auto transition-all duration-300 hover:scale-105  scale-90 swiper-slide">
-//                 <div className="text-gray-500 italic text-sm mb-4">
-//                   <FaQuoteLeft className="inline text-primary mr-2" />
-//                   {item.feedback}
-//                 </div>
-//                 <div className="flex items-center gap-4 border-t pt-4">
-//                   <img
-//                     src={item.photo}
-//                     alt={item.name}
-//                     className="w-12 h-12 rounded-full object-cover"
-//                   />
-//                   <div className="text-left">
-//                     <h4 className="font-semibold text-base text-neutral">{item.name}</h4>
-//                     <p className="text-xs text-gray-500">{item.role}</p>
-//                   </div>
-//                 </div>
-//               </div>
-//             </SwiperSlide>
-//           ))}
-//         </Swiper>
-
-//         <style jsx>{`
-//           .swiper-slide-active {
-//             opacity: 1 !important;
-//             transform: scale(1) !important;
-//           }
-//         `}</style>
-//       </div>
-     
-//     </section>
-//   );
-// };
-
-// export default Testimonials;
-
 
 import { FaQuoteLeft } from "react-icons/fa";
 
@@ -129,7 +40,7 @@ const Testimonials = () => {
         </div>
 
         <div
-    className="flex  justify-center gap-6"
+    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  justify-center gap-6"
         >
           {testimonials.map((item, index) => (
             <div key={index}>

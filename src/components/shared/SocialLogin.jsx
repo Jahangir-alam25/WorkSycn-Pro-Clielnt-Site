@@ -19,7 +19,7 @@ const SocialLogin = () => {
             console.log('Google user:', user);
 
             // Step 1: Check if user already exists
-            const { data: existingUser } = await axiosInstance.get(`/users/email/${user.email}`);
+            const { data: existingUser } = await axiosInstance.get(`/users/by-email/${user.email}`);
 
             if (existingUser?.email) {
                 console.log('User already exists, skipping creation.');
