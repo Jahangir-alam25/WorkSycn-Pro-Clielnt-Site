@@ -7,6 +7,7 @@ import useAuth from '../../hooks/useAuth';
 import useAxios from '../../hooks/useAxios';
 import SocialLogin from '../../components/shared/SocialLogin';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
 
 const Register = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -61,6 +62,9 @@ const Register = () => {
 
   return (
     <div className=" ">
+      <Helmet>
+        <title>Register - WorkSync Pro</title>
+      </Helmet>
       <div className="card-body bg-white rounded">
         <h1 className="text-4xl font-bold mb-6 text-center">Create Account</h1>
 

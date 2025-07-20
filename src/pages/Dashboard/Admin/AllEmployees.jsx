@@ -5,6 +5,7 @@ import useAxiosSecure from '../../../hooks/useAxiosSecure';
 import { FaUserShield, FaTrashAlt, FaUsers } from 'react-icons/fa';
 import { toast } from 'react-toastify';
  import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet-async';
 
 const AllEmployees = () => {
   const axiosSecure = useAxiosSecure();
@@ -54,6 +55,9 @@ const handleFire = async (id) => {
 
   return (
     <div className="p-4 bg-gray-100 min-h-screen">
+      <Helmet>
+        <title>All Employees - WorkSync Pro</title>
+      </Helmet>
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-3xl text-primary font-bold">All Verified Employees</h2>
         <button

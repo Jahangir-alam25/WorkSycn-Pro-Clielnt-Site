@@ -1,9 +1,12 @@
+import { Helmet } from 'react-helmet-async';
 import { FaUserCheck, FaUserClock, FaUserTimes, FaMoneyBillWave, FaUserPlus, FaChartPie } from 'react-icons/fa';
 
 const HRDashboard = () => {
   return (
     <div className="bg-gray-100 min-h-screen p-6">
-      
+      <Helmet>
+        <title>Dashboard - WorkSync Pro</title>
+      </Helmet>
       {/* Page Header */}
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-800 mb-1">HR Dashboard</h1>
@@ -12,7 +15,7 @@ const HRDashboard = () => {
 
       {/* Stats Cards */}
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        
+
         <div className="bg-white rounded-xl shadow-md p-5 flex items-center gap-4 hover:shadow-xl transition">
           <FaUserCheck className="text-3xl text-primary" />
           <div>

@@ -21,42 +21,48 @@ import EmployeeRoute from "./EmployeeRoute";
 import ContactUs from "../pages/ContactUs/ContactUs";
 import AboutUs from "../pages/AboutUs/AboutUs";
 import DashboardHome from "../pages/DashboardHome/DashboardHome";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import Forbidden from "../pages/Forbidden/Forbidden";
 
 export const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <MainLayout />,
-        children: [
-            {
-                path: "/",
-                Component: Home
-            },
-            {
-              path: '/contact-us',
-              element: <ContactUs />
-            },
-            {
-              path: '/about-us',
-              element: <AboutUs />
-            }
-
-        ]
-    },
-    {
-        path: '/',
-        Component: AuthLayout,
-        children: [
-            {
-                path: 'login',
-                Component: Login
-            },
-            {
-                path: 'register',
-                Component: Register
-            }
-        ]
-    },
+  {
+    path: "/",
+    element: <MainLayout />,
+    children: [
       {
+        path: "/",
+        Component: Home
+      },
+      {
+        path: '/contact-us',
+        element: <ContactUs />
+      },
+      {
+        path: '/about-us',
+        element: <AboutUs />
+      },
+      {
+        path: 'forbidden',
+        Component: Forbidden
+      },
+
+    ]
+  },
+  {
+    path: '/',
+    Component: AuthLayout,
+    children: [
+      {
+        path: 'login',
+        Component: Login
+      },
+      {
+        path: 'register',
+        Component: Register
+      }
+    ]
+  },
+  {
     path: '/dashboard',
     element: <PrivateRoute>
       <DashboardLayout></DashboardLayout>
@@ -103,5 +109,9 @@ export const router = createBrowserRouter([
         element: <HRRoute><EmployeeDetails /></HRRoute>
       }
     ]
-    }
+  },
+  {
+    path: '*',
+    Component: ErrorPage
+  }
 ])

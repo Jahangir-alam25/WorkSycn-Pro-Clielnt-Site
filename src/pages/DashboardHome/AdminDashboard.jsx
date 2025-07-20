@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { FaUsers,  FaFileAlt, FaUserShield, FaMoneyCheckAlt } from "react-icons/fa";
 import { PieChart, Pie, Cell, Legend, ResponsiveContainer } from "recharts";
 
@@ -12,6 +13,9 @@ const COLORS = ['#4F46E5', '#10B981', '#F59E0B'];
 const AdminDashboard = () => {
   return (
     <div className="bg-gray-50 min-h-screen p-6">
+      <Helmet>
+        <title>Dashboard - WorkSync Pro</title>
+      </Helmet>
 
       {/* Page Title */}
       <div className="mb-8">

@@ -9,6 +9,7 @@ import {
   FaUserSlash,
   FaEnvelope,
 } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 const StatCard = ({ icon: Icon, label, value, color }) => (
   <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow hover:shadow-lg transition">
@@ -46,7 +47,9 @@ const AdminPanel = () => {
 
   return (
     <div className="p-6 md:p-10 bg-gray-100 min-h-screen">
-      
+      <Helmet>
+        <title>Admin Panel - WorkSync Pro</title>
+      </Helmet>
       <div className="mb-10">
         <h1 className="text-4xl font-bold text-gray-800 dark:text-white">
           Welcome, {user?.displayName || "Admin"} 👋

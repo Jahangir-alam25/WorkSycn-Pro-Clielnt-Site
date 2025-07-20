@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet-async";
 
 
 const AboutUs = () => {
   return (
     <section className="py-20 bg-gray-50 px-4 md:px-20">
+      <Helmet>
+        <title>About Us - WorkSync Pro</title>
+      </Helmet>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold text-gray-800 mb-4">

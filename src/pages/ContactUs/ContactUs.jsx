@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import useAxios from "../../hooks/useAxios"; // Your axios hook
+import { Helmet } from "react-helmet-async";
 
 const ContactUs = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -26,6 +27,9 @@ const ContactUs = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center py-16 px-4 md:px-10">
+      <Helmet>
+        <title>Contact Us - WorkSync Pro</title>
+      </Helmet>
       <h2 className="text-4xl font-extrabold mb-8 text-center text-gray-800">
         Contact <span className="text-primary">WorkSync Pro</span>
       </h2>

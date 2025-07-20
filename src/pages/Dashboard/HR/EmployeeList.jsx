@@ -3,6 +3,7 @@ import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import Swal from "sweetalert2";
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import { Helmet } from "react-helmet-async";
 
 const EmployeeList = () => {
   const axiosSecure = useAxiosSecure();
@@ -67,6 +68,9 @@ const EmployeeList = () => {
 
   return (
     <div className="p-4 bg-gray-100 min-h-screen">
+      <Helmet>
+        <title>Employee List - WorkSync Pro</title>
+      </Helmet>
       {/* <h2 className="text-2xl font-bold mb-4">Employee List</h2> */}
       <h2 className="text-3xl font-bold mb-6 text-center text-primary">Employee List</h2>
 

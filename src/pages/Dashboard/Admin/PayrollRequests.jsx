@@ -7,6 +7,7 @@ import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
+import { Helmet } from 'react-helmet-async';
 
 const stripePromise = loadStripe(import.meta.env.VITE_payment_key);
 
@@ -87,6 +88,9 @@ const PayrollRequests = () => {
 
   return (
     <div className="p-4 bg-gray-100 min-h-screen">
+      <Helmet>
+        <title>Payroll Requests - WorkSync Pro</title>
+      </Helmet>
       {/* <h2 className="text-2xl font-bold mb-4">Payroll Requests</h2> */}
       <h2 className="text-3xl font-bold mb-6 text-center text-primary">Payroll Requests</h2>
       <div className="overflow-x-auto bg-white rounded shadow">

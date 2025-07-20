@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
+import { Helmet } from "react-helmet-async";
 
 const ProgressReview = () => {
   const axiosSecure = useAxiosSecure();
@@ -38,6 +39,9 @@ console.log(workRecords);
 
   return (
     <div className="p-4 bg-gray-100 min-h-screen">
+      <Helmet>
+        <title>Progress Review - WorkSync Pro</title>
+      </Helmet>
       <h2 className="text-3xl font-bold mb-6 text-center text-primary">Employee Work Progress</h2>
 
       <div className="flex flex-col md:flex-row gap-4 mb-6">

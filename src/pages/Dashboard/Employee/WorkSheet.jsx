@@ -8,6 +8,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import useAuth from "../../../hooks/useAuth";
+import { Helmet } from "react-helmet-async";
 
 const WorkSheet = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
@@ -101,6 +102,9 @@ const WorkSheet = () => {
 
   return (
     <div className="p-4 bg-gray-50 min-h-screen">
+      <Helmet>
+        <title>Work Sheet - WorkSync Pro</title>
+      </Helmet>
       {/* <h2 className="text-2xl font-bold mb-6">My Work Sheet</h2> */}
       <h2 className="text-3xl font-bold mb-6 text-center text-primary">My Work Sheet</h2>
 

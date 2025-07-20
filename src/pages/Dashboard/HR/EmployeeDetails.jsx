@@ -6,6 +6,8 @@ import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer,
 } from "recharts";
+import Loading from "../../../components/shared/Loading";
+import { Helmet } from "react-helmet-async";
 
 const EmployeeDetails = () => {
   const { id } = useParams();
@@ -19,7 +21,7 @@ const EmployeeDetails = () => {
     },
   });
 
-  if (isLoading) return <p className="text-center mt-10 text-lg font-semibold text-primary">Loading employee details...</p>;
+  if (isLoading) return <Loading />;
   if (error) return <p className="text-center mt-10 text-red-500 font-semibold">Error loading employee data.</p>;
 
   const { user, salaryHistory } = data;
@@ -31,6 +33,9 @@ const EmployeeDetails = () => {
 
   return (
     <div className="px-4 py-12 bg-[#f9fafb] min-h-screen">
+      <Helmet>
+        <title>Employee Details - WorkSync Pro</title>
+      </Helmet>
       {/* Employee Profile */}
       <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md flex items-center space-x-6 p-6 mb-12">
         <img src={user.photo} alt={user.name} className="w-24 h-24 rounded-full object-cover border-2 border-primary" />

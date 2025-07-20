@@ -7,6 +7,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import useAuth from "../../hooks/useAuth";
 import SocialLogin from "../../components/shared/SocialLogin";
 import useAxios from "../../hooks/useAxios";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
   const { signIn, logOut } = useAuth();
@@ -50,6 +51,9 @@ const Login = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
+      <Helmet>
+        <title>Login - WorkSync Pro</title>
+      </Helmet>
       <div className="w-full max-w-md">
         <h2 className="text-3xl font-bold text-center text-primary mb-6">
           Welcome Back

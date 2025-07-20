@@ -6,11 +6,16 @@ import Team from "./Team";
 import WhyChooseUs from "./WhyChooseUs";
 import FAQ from "./FAQ";
 import ResourceCategories from "./ResourceCategories";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
 
         <div>
+          <Helmet>
+            <title>Home - WorkSync Pro</title>
+       
+          </Helmet>
       <Banner />                  {/* Strong first impression */}
       <Services />                {/* Immediately showcase offerings */}
       <WhyChooseUs />             {/* Explain value proposition */}

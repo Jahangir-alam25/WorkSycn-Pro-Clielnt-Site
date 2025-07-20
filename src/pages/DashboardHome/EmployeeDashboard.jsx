@@ -1,8 +1,12 @@
+import { Helmet } from 'react-helmet-async';
 import { FaTasks, FaClock, FaMoneyCheckAlt, FaChartLine } from 'react-icons/fa';
 
 const EmployeeDashboard = () => {
   return (
     <div className="  min-h-screen bg-gray-100 p-6">
+      <Helmet>
+        <title>Dashboard - WorkSync Pro</title>
+      </Helmet>
       {/* Page Header */}
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-800 mb-1">Welcome, Employee!</h1>
@@ -80,7 +84,7 @@ const EmployeeDashboard = () => {
           </table>
         </div>
       </div>
-  
+
     </div>
   );
 };

@@ -4,6 +4,8 @@ import useUserRole from '../../hooks/useUserRole';
 import AdminDashboard from './AdminDashboard';
 import HRDashboard from './HRDashboard';
 import EmployeeDashboard from './EmployeeDashboard';
+import Loading from '../../components/shared/Loading';
+import Forbidden from '../Forbidden/Forbidden';
 // import Forbidden from '../../Forbidden/Forbidden';
 
 const DashboardHome = () => {
@@ -11,7 +13,7 @@ const DashboardHome = () => {
 
     if (roleLoading) {
         // return <Loading></Loading>
-        return <h1>Loading...</h1>;
+        return <Loading></Loading>
     }
 
     if(role === 'employee' ) {
@@ -24,8 +26,8 @@ const DashboardHome = () => {
         return <AdminDashboard></AdminDashboard>
     }
     else {
-        // return <Forbidden></Forbidden>
-        return <h1>Forbidden</h1>
+        return <Forbidden></Forbidden>;
+
     }
 
 };

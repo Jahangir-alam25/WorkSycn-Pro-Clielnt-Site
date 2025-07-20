@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import { useState } from "react";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const ManageSalaries = () => {
   const axiosSecure = useAxiosSecure();
@@ -48,6 +49,9 @@ const ManageSalaries = () => {
 
   return (
     <div className="p-4 bg-gray-100 min-h-screen">
+      <Helmet>
+        <title>Manage Salaries - WorkSync Pro</title>
+      </Helmet>
       {/* <h2 className="text-2xl font-bold mb-4">Manage Employee & HR Salaries</h2> */}
       <h2 className="text-3xl font-bold mb-6 text-center text-primary">Manage Employee & HR Salaries</h2>
 

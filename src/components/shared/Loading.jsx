@@ -1,9 +1,13 @@
 // components/Loading.jsx
+import { Helmet } from "react-helmet-async";
 import { FaTruckLoading } from "react-icons/fa";
 
 const Loading = () => {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-base-100 px-6 py-12 text-center">
+        <div className="flex flex-col items-center bg-gray-100 justify-center min-h-screen  px-6 py-12 text-center">
+            <Helmet>
+                <title>Loading - WorkSync Pro</title>
+            </Helmet>
             {/* Icon */}
             <div className="animate-bounce text-primary text-7xl mb-4">
                 <FaTruckLoading />

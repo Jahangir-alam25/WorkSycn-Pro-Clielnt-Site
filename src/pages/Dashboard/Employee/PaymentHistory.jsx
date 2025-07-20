@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import useAuth from "../../../hooks/useAuth";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
+import { Helmet } from "react-helmet-async";
 
 const rowsPerPage = 5;
 
@@ -37,6 +38,9 @@ const PaymentHistory = () => {
 
   return (
     <div className="p-4 min-h-screen bg-gray-100">
+      <Helmet>
+        <title>Payment History - WorkSync Pro</title>
+      </Helmet>
       <h2 className="text-3xl font-bold mb-6 text-center text-primary">My Payment History</h2>
 
       {isLoading ? (

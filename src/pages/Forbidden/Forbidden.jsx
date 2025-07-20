@@ -1,9 +1,9 @@
 import { FaLock } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 const Forbidden = () => {
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-base-100 px-6 py-12 text-center">
+        <div className="min-h-screen flex bg-gray-100 flex-col items-center justify-center px-6 py-12 text-center">
             <div className="bg-white p-8 rounded-2xl shadow-lg max-w-md w-full">
                 <div className="flex justify-center mb-4">
                     <FaLock className="text-6xl text-red-500" />
