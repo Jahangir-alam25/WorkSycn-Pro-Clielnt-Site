@@ -3,16 +3,16 @@ import { Helmet } from "react-helmet-async";
 
 const AboutUs = () => {
   return (
-    <section className="py-20 bg-gray-50 px-4 md:px-20">
+    <section className="py-20 bg-gray-50 dark:bg-gray-900 dark:text-white px-4 md:px-20">
       <Helmet>
         <title>About Us - WorkSync Pro</title>
       </Helmet>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold text-gray-800 mb-4">
+          <h2 className="text-4xl font-extrabold text-gray-800 dark:text-white mb-4">
             About <span className="text-primary">WorkSync Pro</span>
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
             At <span className="text-primary font-semibold">WorkSync Pro</span>, we redefine workforce management.
             From employee tracking to payroll automation, we empower businesses to scale and succeed.
           </p>
@@ -30,7 +30,7 @@ const AboutUs = () => {
           </div>
 
           {/* Right Text Content */}
-          <div className="space-y-6 text-gray-700">
+          <div className="space-y-6 text-gray-700 dark:text-gray-300">
             <h3 className="text-2xl font-bold text-primary">
               Empowering Teams, Simplifying Operations
             </h3>

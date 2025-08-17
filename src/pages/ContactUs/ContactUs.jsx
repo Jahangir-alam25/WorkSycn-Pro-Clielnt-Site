@@ -26,11 +26,11 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center py-16 px-4 md:px-10">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col items-center py-16 px-4 md:px-10">
       <Helmet>
         <title>Contact Us - WorkSync Pro</title>
       </Helmet>
-      <h2 className="text-4xl font-extrabold mb-8 text-center text-gray-800">
+      <h2 className="text-4xl font-extrabold mb-8 text-center text-gray-800 dark:text-white">
         Contact <span className="text-primary">WorkSync Pro</span>
       </h2>
 
@@ -39,12 +39,12 @@ const ContactUs = () => {
         {/* Contact Form */}
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="bg-white p-8 rounded-2xl shadow-lg space-y-6"
+          className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg space-y-6"
         >
-          <h3 className="text-2xl font-semibold text-gray-700 mb-4">Send Us a Message</h3>
+          <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-4">Send Us a Message</h3>
 
           <div>
-            <label className="block mb-1 font-medium text-gray-600">Your Email</label>
+            <label className="block mb-1 font-medium text-gray-600 dark:text-gray-400">Your Email</label>
             <input
               {...register("email", {
                 required: "Email is required",
@@ -58,7 +58,7 @@ const ContactUs = () => {
           </div>
 
           <div>
-            <label className="block mb-1 font-medium text-gray-600">Your Message</label>
+            <label className="block mb-1 font-medium text-gray-600 dark:text-gray-400">Your Message</label>
             <textarea
               {...register("message", { required: "Message is required" })}
               rows="5"
@@ -74,8 +74,8 @@ const ContactUs = () => {
         </form>
 
         {/* Contact Details */}
-        <div className="bg-white p-8 rounded-2xl shadow-lg space-y-6">
-          <h3 className="text-2xl font-semibold text-gray-700 mb-4">Our Contact Information</h3>
+        <div className="bg-white dark:bg-gray-800 dark:text-white p-8 rounded-xl shadow-lg space-y-6">
+          <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-4">Our Contact Information</h3>
 
           <div className="flex items-center gap-4">
             <FaMapMarkerAlt className="text-xl text-primary" />
