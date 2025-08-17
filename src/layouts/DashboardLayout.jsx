@@ -44,7 +44,7 @@ const DashboardLayout = () => {
 
       <div className="drawer-side ">
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-        <ul className="menu border-primary bg-white border-r-4 rounded-md text-base-content min-h-full w-70 p-4">
+        <ul className="menu border-primary bg-white dark:bg-gray-800 dark:text-white border-r-4 rounded-md text-base-content min-h-full w-70 p-4">
         <WorkSyncProLogo></WorkSyncProLogo>
 
           {/* Common link */}

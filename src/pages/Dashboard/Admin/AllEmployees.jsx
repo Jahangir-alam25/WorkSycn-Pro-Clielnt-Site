@@ -54,7 +54,7 @@ const handleFire = async (id) => {
 
 
   return (
-    <div className="p-4 bg-gray-100 min-h-screen">
+    <div className="p-4 bg-gray-100 dark:bg-gray-900 min-h-screen">
       <Helmet>
         <title>All Employees - WorkSync Pro</title>
       </Helmet>
@@ -116,7 +116,7 @@ const handleFire = async (id) => {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {verifiedUsers.map(user => (
-            <div key={user._id} className="card bg-base-100 shadow p-4">
+            <div key={user._id} className="card bg-base-100 dark:bg-gray-800 dark:text-white rounded-xl shadow p-4">
               <div className="flex items-center gap-4 mb-4">
                 <img
                   src={user.photo}
@@ -126,7 +126,7 @@ const handleFire = async (id) => {
                 <div>
                   <h3 className="font-bold">{user.name}</h3>
                   <p className="text-sm">{user.email}</p>
-                  <p className="text-xs text-gray-500">{user.designation}</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">{user.designation}</p>
                 </div>
               </div>
               <div className="flex justify-between">

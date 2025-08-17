@@ -12,7 +12,7 @@ import {
 import { Helmet } from "react-helmet-async";
 
 const StatCard = ({ icon: Icon, label, value, color }) => (
-  <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow hover:shadow-lg transition">
+  <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
     <div className="flex items-center gap-4">
       <div className={`text-5xl text-${color}-500`}>
         <Icon />
@@ -46,7 +46,7 @@ const AdminPanel = () => {
   });
 
   return (
-    <div className="p-6 md:p-10 bg-gray-100 min-h-screen">
+    <div className="p-6 md:p-10 bg-gray-100 dark:bg-gray-900 dark:text-white min-h-screen">
       <Helmet>
         <title>Admin Panel - WorkSync Pro</title>
       </Helmet>
@@ -91,7 +91,7 @@ const AdminPanel = () => {
       )}
 
       {stats.breakdown?.length > 0 && (
-        <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md p-6 mb-12">
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">
             Role-wise User Breakdown
           </h2>
@@ -117,7 +117,7 @@ const AdminPanel = () => {
       )}
 
       {/* Contact Messages Table */}
-      <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md p-6">
+      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
         <div className="flex items-center gap-3 mb-4">
           <FaEnvelope className="text-xl text-primary" />
           <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
@@ -132,7 +132,7 @@ const AdminPanel = () => {
         ) : (
           <div className="overflow-x-auto">
             <table className="table w-full text-left">
-              <thead className="text-sm uppercase text-gray-500 border-b">
+              <thead className="text-sm uppercase text-gray-500 dark:text-gray-400 border-b">
                 <tr>
                   <th className="p-3">Email</th>
                   <th className="p-3">Message</th>
