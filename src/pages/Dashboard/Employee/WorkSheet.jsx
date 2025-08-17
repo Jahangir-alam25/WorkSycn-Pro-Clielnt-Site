@@ -101,7 +101,7 @@ const WorkSheet = () => {
   };
 
   return (
-    <div className="p-4 bg-gray-50 min-h-screen">
+    <div className="p-4 bg-gray-100 dark:bg-gray-900 min-h-screen">
       <Helmet>
         <title>Work Sheet - WorkSync Pro</title>
       </Helmet>
@@ -111,9 +111,9 @@ const WorkSheet = () => {
       {/* ADD FORM */}
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-wrap items-center gap-4 bg-white shadow p-4 rounded-md mb-8"
+        className="flex flex-wrap items-center gap-4 bg-white dark:bg-gray-800 shadow p-4 rounded-md mb-8"
       >
-        <select {...register("taskType")} className="select select-bordered" required>
+        <select {...register("taskType")} className="select select-bordered dark:bg-gray-900 dark:text-white" required>
           <option value="">Select Task</option>
           <option value="Sales">Sales</option>
           <option value="Support">Support</option>
@@ -125,13 +125,13 @@ const WorkSheet = () => {
           type="number"
           {...register("hours", { required: true, min: 0.5 })}
           placeholder="Hours"
-          className="input input-bordered"
+          className="input dark:bg-gray-900 dark:text-white input-bordered"
         />
 
         <DatePicker
           selected={selectedDate}
           onChange={(date) => setSelectedDate(date)}
-          className="input input-bordered"
+          className="input dark:bg-gray-900 dark:text-white input-bordered"
         />
 
         <button className="btn btn-primary" type="submit">
@@ -140,7 +140,7 @@ const WorkSheet = () => {
       </form>
 
       {/* TASK TABLE */}
-      <div className="overflow-x-auto bg-white rounded shadow">
+      <div className="overflow-x-auto bg-white dark:bg-gray-800 dark:text-white rounded shadow">
         <table className="table">
           <thead className="bg-primary text-white">
             <tr>
@@ -170,7 +170,7 @@ const WorkSheet = () => {
             ))}
             {workEntries.length === 0 && (
               <tr>
-                <td colSpan="5" className="text-center py-6 text-gray-500">
+                <td colSpan="5" className="text-center py-6 text-gray-500 dark:text-gray-400">
                   No records found.
                 </td>
               </tr>
@@ -181,10 +181,10 @@ const WorkSheet = () => {
 
       {/* EDIT MODAL */}
       <dialog id="edit_modal" className="modal">
-        <div className="modal-box">
+        <div className="modal-box dark:bg-gray-800 dark:text-white">
           <h3 className="font-bold text-lg mb-4">Edit Task</h3>
           <form onSubmit={handleEditSubmit(onEditSubmit)} className="space-y-4">
-            <select {...editRegister("taskType")} className="select select-bordered w-full">
+            <select {...editRegister("taskType")} className="select select-bordered dark:bg-gray-900 dark:text-white w-full">
               <option value="">Select Task</option>
               <option value="Sales">Sales</option>
               <option value="Support">Support</option>
@@ -195,13 +195,13 @@ const WorkSheet = () => {
             <input
               type="number"
               {...editRegister("hours", { required: true })}
-              className="input input-bordered w-full"
+              className="input input-bordered dark:bg-gray-900 dark:text-white w-full"
             />
 
             <DatePicker
               selected={editDate}
               onChange={(date) => setEditDate(date)}
-              className="input input-bordered w-full"
+              className="input dark:bg-gray-900 dark:text-white input-bordered w-full"
             />
 
             <div className="modal-action">

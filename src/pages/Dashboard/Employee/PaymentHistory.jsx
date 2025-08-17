@@ -37,7 +37,7 @@ const PaymentHistory = () => {
   );
 
   return (
-    <div className="p-4 min-h-screen bg-gray-100">
+    <div className="p-4 min-h-screen bg-gray-100 dark:bg-gray-900 dark:text-white">
       <Helmet>
         <title>Payment History - WorkSync Pro</title>
       </Helmet>
@@ -46,10 +46,10 @@ const PaymentHistory = () => {
       {isLoading ? (
         <div className="text-center">Loading...</div>
       ) : payments.length === 0 ? (
-        <div className="text-center text-gray-500">No payment history found.</div>
+        <div className="text-center text-gray-500 dark:text-gray-400">No payment history found.</div>
       ) : (
         <>
-          <div className="overflow-x-auto bg-white rounded shadow-md">
+          <div className="overflow-x-auto bg-white dark:bg-gray-800 dark:text-white rounded shadow-md">
             <table className="table w-full">
               <thead className="bg-primary text-white">
                 <tr>
