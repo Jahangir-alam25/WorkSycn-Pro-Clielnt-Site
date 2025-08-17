@@ -24,30 +24,44 @@ const Navbar = () => {
   const navItems = (
     <>
       <li>
-        <NavLink to="/" className="hover:text-primary">Home</NavLink>
+        <NavLink to="/"     
+        className={({ isActive }) =>
+            isActive
+              ? "text-primary dark:text-white dark:border-white font-semibold border-b-2 border-primary"
+              : "hover:text-primary dark:hover:bg-gray-200"
+          }>Home</NavLink>
       </li>
       <li>
-        <NavLink to="/dashboard" className="hover:text-primary">Dashboard</NavLink>
+        <NavLink to="/dashboard" 
+        className={({ isActive }) =>
+            isActive
+              ? "text-primary dark:text-white dark:border-white font-semibold border-b-2 border-primary"
+              : "hover:text-primary dark:hover:bg-gray-200"
+          }>Dashboard</NavLink>
       </li>
       <li>
-        <NavLink to="/contact-us" className="hover:text-primary">Contact Us</NavLink>
+        <NavLink to="/contact-us" 
+        className={({ isActive }) =>
+            isActive
+              ? "text-primary dark:text-white dark:border-white font-semibold border-b-2 border-primary"
+              : "hover:text-primary dark:hover:bg-gray-200"
+          }>Contact Us</NavLink>
       </li>
       <li>
-        <NavLink to="/about-us" className="hover:text-primary">About Us</NavLink>
+        <NavLink to="/about-us" 
+        className={({ isActive }) =>
+            isActive
+              ? "text-primary dark:text-white dark:border-white font-semibold border-b-2 border-primary"
+              : "hover:text-primary dark:hover:bg-gray-200"
+          }>About Us</NavLink>
       </li>
     </>
   );
 
   return (
-    <div className="bg-base-100 shadow-md sticky top-0 z-50 dark:bg-gray-800 dark:text-white">
+    <div className="bg-base-100 dark:bg-gray-900 dark:text-white shadow-md sticky top-0 z-50 ">
       <div className="navbar w-11/12 mx-auto flex justify-between items-center">
-        {/* <div className="navbar-start">
-            <img className="w-10 h-10" src="./logo.jpg" alt="WorkSync Pro Logo" />
-          <Link to="/" className="text-xl font-bold text-primary">
-            WorkSync <span className="text-accent">Pro</span>
-          </Link>
-        
-        </div> */}
+     
 
         <div className="navbar-start">
           <WorkSyncProLogo></WorkSyncProLogo>
@@ -100,7 +114,7 @@ const Navbar = () => {
                 d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </label>
-          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box -ml-20 w-38">
+          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 dark:bg-gray-800 rounded-box -ml-20 w-38">
             <div className="flex items-start justify-between mb-2">
               <div>
                 {navItems}
@@ -143,3 +157,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+

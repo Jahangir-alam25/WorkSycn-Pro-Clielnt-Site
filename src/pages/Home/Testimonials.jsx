@@ -29,12 +29,12 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-16 bg-base-100">
+    <section className="py-16 bg-base-100 dark:bg-gray-900 dark:text-white">
       <div className="w-11/12 mx-auto text-center">
         <div className="mb-12">
           <FaQuoteLeft className="text-4xl mx-auto text-primary mb-4" />
           <h2 className="text-3xl md:text-4xl font-bold">What our customers are saying</h2>
-          <p className="text-gray-500 mt-2 max-w-xl mx-auto">
+          <p className="text-gray-500 dark:text-gray-400 mt-2 max-w-xl mx-auto">
             Enhance posture, mobility, and well-being effortlessly with WorkSync Pro. Simplify management and boost your team's productivity!
           </p>
         </div>
@@ -44,8 +44,8 @@ const Testimonials = () => {
         >
           {testimonials.map((item, index) => (
             <div key={index}>
-              <div className="bg-white shadow-lg rounded-xl p-6 max-w-sm mx-auto  ">
-                <div className="text-gray-500 italic text-sm mb-4">
+              <div className="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-6 max-w-sm mx-auto  ">
+                <div className="text-gray-500 dark:text-gray-400 italic text-sm mb-4">
                   <FaQuoteLeft className="inline text-primary mr-2" />
                   {item.feedback}
                 </div>
@@ -56,8 +56,8 @@ const Testimonials = () => {
                     className="w-12 h-12 rounded-full object-cover"
                   />
                   <div className="text-left">
-                    <h4 className="font-semibold text-base text-neutral">{item.name}</h4>
-                    <p className="text-xs text-gray-500">{item.role}</p>
+                    <h4 className="font-semibold text-base dark:text-white text-neutral">{item.name}</h4>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">{item.role}</p>
                   </div>
                 </div>
               </div>

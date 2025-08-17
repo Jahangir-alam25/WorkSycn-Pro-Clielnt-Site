@@ -1,48 +1,4 @@
-// import { FaUsersCog, FaRegCalendarCheck, FaDollarSign, FaFileAlt } from "react-icons/fa";
 
-// const ResourceCategories = () => {
-//   const categories = [
-//     {
-//       title: "HR Templates",
-//       icon: <FaUsersCog className="text-4xl text-primary" />,
-//       description: "Ready-to-use HR documents like offer letters, contracts, leave forms.",
-//     },
-//     {
-//       title: "Work Log Sheets",
-//       icon: <FaRegCalendarCheck className="text-4xl text-secondary" />,
-//       description: "Download monthly/weekly work log templates to track employee activity.",
-//     },
-//     {
-//       title: "Payroll Templates",
-//       icon: <FaDollarSign className="text-4xl text-accent" />,
-//       description: "Accurate payroll spreadsheets and payment record formats.",
-//     },
-//     {
-//       title: "Company Policies",
-//       icon: <FaFileAlt className="text-4xl text-info" />,
-//       description: "View official policies like attendance, remote work, and conduct.",
-//     },
-//   ];
-
-//   return (
-//     <section className="py-16 bg-base-200">
-//       <div className="max-w-6xl mx-auto px-4">
-//         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">Resource Categories</h2>
-//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-//           {categories.map((cat, index) => (
-//             <div key={index} className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300 text-center">
-//               <div className="mb-4 flex justify-center">{cat.icon}</div>
-//               <h3 className="text-xl font-semibold mb-2">{cat.title}</h3>
-//               <p className="text-sm text-gray-600">{cat.description}</p>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default ResourceCategories;
 import { FaBookOpen, FaUserTie, FaMoneyBillWave, FaChartPie } from "react-icons/fa";
 
 const resourceItems = [
@@ -74,14 +30,14 @@ const resourceItems = [
 
 const ResourceCategories = () => {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 dark:bg-gray-900 dark:text-white">
       <section className="py-20 w-11/12 mx-auto">
       {/* Title */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-800">
+        <h2 className="text-4xl font-bold text-gray-800 dark:text-white">
           Explore <span className="text-primary">Resources</span>
         </h2>
-        <p className="mt-4 text-gray-500 max-w-2xl mx-auto">
+        <p className="mt-4 text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
           Resources crafted to empower your team — from new joiners to HR managers. Access guides, insights, and productivity tools at your fingertips.
         </p>
       </div>
@@ -91,11 +47,11 @@ const ResourceCategories = () => {
         {resourceItems.map((item, idx) => (
           <div
             key={idx}
-            className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl transition duration-300"
+            className="bg-white dark:bg-gray-800  rounded-xl shadow-md p-6 text-center hover:shadow-xl transition duration-300"
           >
             {item.icon}
             <h4 className="text-lg font-semibold mb-2">{item.title}</h4>
-            <p className="text-sm text-gray-600 mb-4">{item.description}</p>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">{item.description}</p>
             <button className="text-primary font-semibold hover:underline">
               {item.linkText} →
             </button>
