@@ -67,14 +67,14 @@ const EmployeeList = () => {
   };
 
   return (
-    <div className="p-4 bg-gray-100 min-h-screen">
+    <div className="p-4 bg-gray-100 dark:bg-gray-900 dark:text-white min-h-screen">
       <Helmet>
         <title>Employee List - WorkSync Pro</title>
       </Helmet>
       {/* <h2 className="text-2xl font-bold mb-4">Employee List</h2> */}
       <h2 className="text-3xl font-bold mb-6 text-center text-primary">Employee List</h2>
 
-      <div className="overflow-x-auto bg-white rounded shadow">
+      <div className="overflow-x-auto bg-white dark:bg-gray-800 rounded shadow">
         <table className="table">
           <thead className="bg-primary text-white">
             <tr>
@@ -125,7 +125,7 @@ const EmployeeList = () => {
             ))}
             {employees.length === 0 && (
               <tr>
-                <td colSpan="8" className="text-center text-gray-500">
+                <td colSpan="8" className="text-center dark:text-gray-400 text-gray-500">
                   No employees found.
                 </td>
               </tr>
@@ -136,7 +136,7 @@ const EmployeeList = () => {
 
       {/* Pay Salary Modal */}
       <dialog id="pay_modal" className="modal">
-        <div className="modal-box">
+        <div className="modal-box dark:bg-gray-800">
           <h3 className="font-bold text-lg mb-4">
             Pay {selectedEmployee?.name}'s Salary
           </h3>
@@ -144,14 +144,14 @@ const EmployeeList = () => {
             <label className="block mb-1">Salary</label>
             <input
               type="number"
-              className="input input-bordered w-full"
+              className="input dark:bg-gray-900 dark:text-white input-bordered w-full"
               value={selectedEmployee?.salary}
               readOnly
             />
           </div>
           <div className="flex gap-4">
             <select
-              className="select select-bordered w-full"
+              className="select dark:bg-gray-900 dark:text-white select-bordered w-full"
               value={month}
               onChange={(e) => setMonth(e.target.value)}
             >
@@ -168,7 +168,7 @@ const EmployeeList = () => {
             <input
               type="number"
               placeholder="Year"
-              className="input input-bordered w-full"
+              className="input dark:bg-gray-900 dark:text-white input-bordered w-full"
               value={year}
               onChange={(e) => setYear(e.target.value)}
             />

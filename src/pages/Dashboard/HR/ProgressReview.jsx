@@ -38,7 +38,7 @@ console.log(workRecords);
   }, [employeeName, month, refetch]);
 
   return (
-    <div className="p-4 bg-gray-100 min-h-screen">
+    <div className="p-4 bg-gray-100 dark:bg-gray-900 dark:text-white min-h-screen">
       <Helmet>
         <title>Progress Review - WorkSync Pro</title>
       </Helmet>
@@ -47,7 +47,7 @@ console.log(workRecords);
       <div className="flex flex-col md:flex-row gap-4 mb-6">
         {/* Employee Filter */}
         <select
-          className="select select-bordered w-full max-w-xs"
+          className="select dark:bg-gray-800 dark:text-white select-bordered w-full max-w-xs"
           value={employeeName}
           onChange={(e) => setEmployeeName(e.target.value)}
         >
@@ -61,7 +61,7 @@ console.log(workRecords);
 
         {/* Month Filter */}
         <select
-          className="select select-bordered w-full max-w-xs"
+          className="select dark:bg-gray-800 dark:text-white select-bordered w-full max-w-xs"
           value={month}
           onChange={(e) => setMonth(e.target.value)}
         >
@@ -90,7 +90,7 @@ console.log(workRecords);
               <th>Date</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="text-gray-700 dark:bg-gray-800 dark:text-gray-300">
             {workRecords.length > 0 ? (
               workRecords.map((record, index) => (
                 <tr key={record._id}>
