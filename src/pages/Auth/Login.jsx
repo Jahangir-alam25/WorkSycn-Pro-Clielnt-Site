@@ -62,28 +62,28 @@ const Login = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
           {/* Email */}
           <div className="mb-4">
-            <label className="block mb-1 text-sm font-medium text-gray-600">
+            <label className="block mb-1 text-sm font-medium dark:text-gray-400 text-gray-600">
               Email Address
             </label>
             <input
               type="email"
               {...register("email", { required: "Email is required" })}
               placeholder="Enter your email"
-              className="input input-bordered w-full"
+              className="input input-bordered dark:bg-gray-900 dark:text-white w-full"
             />
             {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
           </div>
 
           {/* Password */}
           <div className="mb-2 relative">
-            <label className="block mb-1 text-sm font-medium text-gray-600">
+            <label className="block mb-1 text-sm font-medium text-gray-600 dark:text-gray-400">
               Password
             </label>
             <input
               type={showPassword ? "text" : "password"}
               {...register("password", { required: "Password is required" })}
               placeholder="Enter your password"
-              className="input input-bordered w-full pr-10"
+              className="input input-bordered dark:bg-gray-900 dark:text-white w-full pr-10"
             />
             <span
               className="absolute top-9 right-3 text-gray-500 cursor-pointer"

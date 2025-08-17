@@ -52,7 +52,7 @@ const ContactUs = () => {
               })}
               type="email"
               placeholder="Enter your email"
-              className="input input-bordered w-full"
+              className="input input-bordered dark:bg-gray-900 dark:text-white w-full"
             />
             {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
           </div>
@@ -63,7 +63,7 @@ const ContactUs = () => {
               {...register("message", { required: "Message is required" })}
               rows="5"
               placeholder="Type your message here..."
-              className="textarea textarea-bordered w-full"
+              className="textarea textarea-bordered dark:bg-gray-900 dark:text-white w-full"
             ></textarea>
             {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
           </div>

@@ -65,7 +65,7 @@ const Register = () => {
       <Helmet>
         <title>Register - WorkSync Pro</title>
       </Helmet>
-      <div className="card-body bg-white rounded">
+      <div className="card-body bg-white dark:bg-gray-800 dark:text-white rounded">
         <h1 className="text-4xl font-bold mb-6 text-center">Create Account</h1>
 
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -76,7 +76,7 @@ const Register = () => {
               <label className="label">Your Name</label>
               <input type="text"
                 {...register('name', { required: "Name is required" })}
-                className="input input-bordered w-full"
+                className="input input-bordered dark:bg-gray-900 dark:text-white w-full"
                 placeholder="Your Name"
               />
               {errors.name && <p className='text-red-500'>{errors.name.message}</p>}
@@ -87,7 +87,7 @@ const Register = () => {
               <label className="label">Profile Picture</label>
               <input type="file"
                 onChange={handleImageUpload}
-                className="file-input file-input-bordered w-full"
+                className="file-input file-input-bordered dark:bg-gray-900 dark:text-white w-full"
               />
             </div>
 
@@ -96,7 +96,7 @@ const Register = () => {
               <label className="label">Email</label>
               <input type="email"
                 {...register('email', { required: "Email is required" })}
-                className="input input-bordered w-full"
+                className="input input-bordered dark:bg-gray-900 dark:text-white w-full"
                 placeholder="Email"
               />
               {errors.email && <p className='text-red-500'>{errors.email.message}</p>}
@@ -115,7 +115,7 @@ const Register = () => {
                     hasSpecialChar: value => /[!@#$%^&*(),.?/":{}|<>]/.test(value) || "Must include a special character"
                   }
                 })}
-                className="input input-bordered w-full pr-10"
+                className="input input-bordered dark:bg-gray-900 dark:text-white w-full pr-10"
                 placeholder="Password"
               />
 
@@ -135,7 +135,7 @@ const Register = () => {
               <label className="label">Select Role</label>
               <select
                 {...register("role", { required: "Role is required" })}
-                className="select select-bordered w-full"
+                className="select select-bordered dark:bg-gray-900 dark:text-white w-full"
               >
                 <option value="">Select Role</option>
                 <option value="employee">Employee</option>
@@ -149,7 +149,7 @@ const Register = () => {
               <label className="label">Designation</label>
               <input type="text"
                 {...register("designation", { required: "Designation is required" })}
-                className="input input-bordered w-full"
+                className="input input-bordered dark:bg-gray-900 dark:text-white w-full"
               />
               {errors.designation && <p className="text-red-500">{errors.designation.message}</p>}
             </div>
@@ -159,7 +159,7 @@ const Register = () => {
               <label className="label">Bank Account No</label>
               <input type="text"
                 {...register("bank_account_no", { required: "Bank account no is required" })}
-                className="input input-bordered w-full"
+                className="input input-bordered dark:bg-gray-900 dark:text-white w-full"
               />
               {errors.bank_account_no && <p className="text-red-500">{errors.bank_account_no.message}</p>}
             </div>
@@ -169,7 +169,7 @@ const Register = () => {
               <label className="label">Salary</label>
               <input type="number"
                 {...register("salary", { required: "Salary is required" })}
-                className="input input-bordered w-full"
+                className="input input-bordered dark:bg-gray-900 dark:text-white w-full"
               />
               {errors.salary && <p className="text-red-500">{errors.salary.message}</p>}
             </div>
