@@ -4,7 +4,7 @@ import { FaTruckLoading } from "react-icons/fa";
 
 const Loading = () => {
     return (
-        <div className="flex flex-col items-center bg-gray-100 justify-center min-h-screen  px-6 py-12 text-center">
+        <div className="flex flex-col items-center bg-gray-100 dark:bg-gray-900 dark:text-white justify-center min-h-screen  px-6 py-12 text-center">
             <Helmet>
                 <title>Loading - WorkSync Pro</title>
             </Helmet>

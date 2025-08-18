@@ -62,7 +62,7 @@ const PaymentHistory = () => {
               </thead>
               <tbody>
                 {paginatedData.map((item, index) => (
-                  <tr key={item._id} className="hover:bg-gray-50">
+                  <tr key={item._id} className="hover:bg-gray-50 dark:hover:bg-gray-700">
                     <td>{(currentPage - 1) * rowsPerPage + index + 1}</td>
                     <td>{item.monthName || item.month}</td>
                     <td>{item.year}</td>
