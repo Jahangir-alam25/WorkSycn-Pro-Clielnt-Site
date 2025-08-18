@@ -93,8 +93,8 @@ const PayrollRequests = () => {
       </Helmet>
       {/* <h2 className="text-2xl font-bold mb-4">Payroll Requests</h2> */}
       <h2 className="text-3xl font-bold mb-6 text-center text-primary">Payroll Requests</h2>
-      <div className="overflow-x-auto bg-white rounded shadow">
-        <table className="table table-zebra w-full">
+      <div className="overflow-x-auto bg-white dark:bg-gray-800 dark:text-white rounded shadow">
+        <table className="table  w-full">
           <thead className='bg-primary text-white'>
             <tr>
               <th>Name</th>

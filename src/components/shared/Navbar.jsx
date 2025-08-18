@@ -59,7 +59,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="bg-base-100 dark:bg-gray-900 dark:border-b-2 dark:text-white shadow-md sticky top-0 z-50 ">
+    <div className="bg-cyan-200 dark:bg-gray-900 dark:border-b-2 dark:text-white shadow-md sticky top-0 z-50 ">
       <div className="navbar w-11/12 mx-auto flex justify-between items-center">
      
 

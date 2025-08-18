@@ -79,7 +79,7 @@ console.log(workRecords);
 
       {/* Table of Work Records */}
       <div className="overflow-x-auto bg-white rounded shadow">
-        <table className="table table-zebra w-full">
+        <table className="table  w-full">
           <thead className="bg-primary text-white">
             <tr>
               <th>#</th>

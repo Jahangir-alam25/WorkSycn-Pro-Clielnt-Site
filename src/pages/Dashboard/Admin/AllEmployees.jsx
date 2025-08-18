@@ -69,8 +69,8 @@ const handleFire = async (id) => {
       </div>
 
       {viewMode === 'table' ? (
-        <div className="overflow-x-auto bg-white rounded shadow">
-          <table className="table table-zebra w-full">
+        <div className="overflow-x-auto bg-white dark:bg-gray-800 dark:text-white rounded shadow">
+          <table className="table w-full">
             <thead className="bg-primary text-white">
               <tr>
                 <th>Name</th>

@@ -141,7 +141,7 @@ const AdminPanel = () => {
               </thead>
               <tbody>
                 {contactMessages.map((msg) => (
-                  <tr key={msg._id} className="hover:bg-base-200">
+                  <tr key={msg._id} className="hover:bg-base-200 dark:hover:bg-gray-700">
                     <td className="p-3">{msg.email}</td>
                     <td className="p-3">{msg.message}</td>
                     <td className="p-3">
