@@ -28,7 +28,7 @@ const Navbar = () => {
         className={({ isActive }) =>
             isActive
               ? "text-primary dark:text-white dark:border-white font-semibold border-b-2 border-primary"
-              : "hover:text-primary dark:hover:bg-gray-200"
+              : "text-white hover:text-primary hover:font-bold dark:hover:bg-gray-200"
           }>Home</NavLink>
       </li>
       <li>
@@ -36,7 +36,7 @@ const Navbar = () => {
         className={({ isActive }) =>
             isActive
               ? "text-primary dark:text-white dark:border-white font-semibold border-b-2 border-primary"
-              : "hover:text-primary dark:hover:bg-gray-200"
+              :  "text-white hover:text-primary hover:font-bold  dark:hover:bg-gray-200"
           }>Dashboard</NavLink>
       </li>
       <li>
@@ -44,7 +44,7 @@ const Navbar = () => {
         className={({ isActive }) =>
             isActive
               ? "text-primary dark:text-white dark:border-white font-semibold border-b-2 border-primary"
-              : "hover:text-primary dark:hover:bg-gray-200"
+              : "text-white hover:text-primary hover:font-bold dark:hover:bg-gray-200"
           }>Contact Us</NavLink>
       </li>
       <li>
@@ -52,14 +52,14 @@ const Navbar = () => {
         className={({ isActive }) =>
             isActive
               ? "text-primary dark:text-white dark:border-white font-semibold border-b-2 border-primary"
-              : "hover:text-primary dark:hover:bg-gray-200"
+              : "text-white hover:text-primary hover:font-bold dark:hover:bg-gray-200"
           }>About Us</NavLink>
       </li>
     </>
   );
 
   return (
-    <div className="bg-cyan-200 dark:bg-gray-900 dark:border-b-2 dark:text-white shadow-md sticky top-0 z-50 ">
+    <div className="bg-cyan-600 dark:bg-gray-900 dark:border-b-2 dark:text-white shadow-md sticky top-0 z-50 ">
       <div className="navbar w-11/12 mx-auto flex justify-between items-center">
      
 

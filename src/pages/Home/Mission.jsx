@@ -5,13 +5,13 @@ import missionImg from "../../assets/register.jpg";  // Update with your own ima
 
 const Mission = () => {
   return (
-   <div className="bg-gray-100 dark:bg-gray-900 dark:text-white ">
+   <div className="bg-cyan-100 dark:bg-gray-900 dark:text-white ">
      <section className=" py-20 w-11/12 mx-auto ">
 
       {/* Header */}
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-gray-800 dark:text-white">
-          Our <span className="text-primary">Mission</span>
+          Our <span className="text-primary dark:text-pink-500">Mission</span>
         </h2>
         <p className="mt-4 text-gray-500 dark:text-gray-400 max-w-3xl mx-auto">
           At WorkSync Pro, our mission is simple yet powerful: to empower modern companies with effortless employee management, transparent payroll processing, and productivity-enhancing insights.
@@ -24,7 +24,7 @@ const Mission = () => {
           <img src={missionImg} alt="Our Mission" className="w-full max-w-xl mx-auto rounded-lg shadow-xl" />
         </div>
         <div className="flex-1">
-          <h3 className="text-2xl font-semibold mb-4 text-primary">Why We Exist</h3>
+          <h3 className="text-2xl font-semibold mb-4 text-primary dark:text-pink-500">Why We Exist</h3>
           <p className="text-gray-600 dark:text-gray-400">
             We believe that managing a workforce shouldn't feel like a burden. That’s why WorkSync Pro brings scalable HR, payroll, and employee workflow management to your fingertips—helping companies like yours grow without barriers.
           </p>
@@ -37,7 +37,7 @@ const Mission = () => {
       {/* Mission Pillars */}
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
         <div className="bg-base-100 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
-          <FaUsers className="text-3xl text-primary mb-4 mx-auto" />
+          <FaUsers className="text-3xl text-primary dark:text-white mb-4 mx-auto" />
           <h4 className="text-lg font-semibold text-center mb-2">People First</h4>
           <p className="text-gray-500 dark:text-gray-400 text-center">
             Empower every employee with tools that inspire success.
@@ -58,7 +58,7 @@ const Mission = () => {
           </p>
         </div>
         <div className="bg-base-100 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
-          <FaChartLine className="text-3xl text-primary mb-4 mx-auto" />
+          <FaChartLine className="text-3xl text-primary dark:text-white mb-4 mx-auto" />
           <h4 className="text-lg font-semibold text-center mb-2">Growth Focus</h4>
           <p className="text-gray-500 dark:text-gray-400 text-center">
             Enable data-driven growth with performance insights.
@@ -76,7 +76,7 @@ const Mission = () => {
 
       {/* CTA */}
       <div className="text-center">
-        <button className="btn btn-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700">
+        <button className="btn btn-primary dark:bg-pink-500 hover:dark:bg-pink-700 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700">
           Join WorkSync Pro Today
         </button>
       </div>

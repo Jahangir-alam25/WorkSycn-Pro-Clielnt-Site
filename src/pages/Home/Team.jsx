@@ -20,9 +20,9 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 dark:text-white">
+    <div className="bg-cyan-100 dark:bg-gray-900 dark:text-white">
       <section className="py-20 w-11/12 mx-auto">
-      <h2 className="text-4xl font-bold text-center text-primary mb-4">
+      <h2 className="text-4xl font-bold text-center text-primary dark:text-pink-500 mb-4">
         Meet Our Leadership
       </h2>
       <p className="text-center text-gray-600 dark:text-gray-400 max-w-xl mx-auto mb-12">
@@ -38,13 +38,13 @@ const Team = () => {
             <img
               src={member.photo}
               alt={member.name}
-              className="w-32 h-32 rounded-full object-cover mx-auto mb-4 border-4 border-primary"
+              className="w-32 h-32 rounded-full object-cover mx-auto mb-4 border-4 border-primary dark:border-pink-500"
             />
             <h4 className="text-xl font-semibold text-neutral dark:text-white mb-1">
               {member.name}
             </h4>
             <p className="text-sm text-gray-500 dark:text-gray-400">{member.role}</p>
-             <div className="mt-4 h-1 w-16 mx-auto bg-primary rounded-full"></div>
+             <div className="mt-4 h-1 w-16 mx-auto bg-primary dark:bg-pink-500  rounded-full"></div>
           </div>
         ))}
       </div>

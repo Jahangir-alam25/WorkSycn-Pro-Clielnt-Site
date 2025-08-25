@@ -6,7 +6,7 @@ const WorkSyncProLogo = () => {
         <div>
             <Link to='/'> <div className="flex items-center space-x-1">
                 <img className="w-10 h-10" src="./logo.jpg" alt="WorkSync Pro Logo" />
-                <h1 className="text-xl font-bold text-primary">
+                <h1 className="text-xl font-bold text-primary dark:text-pink-500">
                     WorkSyncPro
                 </h1>
 

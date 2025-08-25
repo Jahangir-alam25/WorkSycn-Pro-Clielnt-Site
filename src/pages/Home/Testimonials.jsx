@@ -29,10 +29,10 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-16 bg-base-100 dark:bg-gray-900 dark:text-white">
+    <section className="py-16 bg-cyan-100 dark:bg-gray-900 dark:text-white">
       <div className="w-11/12 mx-auto text-center">
         <div className="mb-12">
-          <FaQuoteLeft className="text-4xl mx-auto text-primary mb-4" />
+          <FaQuoteLeft className="text-4xl mx-auto text-primary dark:text-pink-500 mb-4" />
           <h2 className="text-3xl md:text-4xl font-bold">What our customers are saying</h2>
           <p className="text-gray-500 dark:text-gray-400 mt-2 max-w-xl mx-auto">
             Enhance posture, mobility, and well-being effortlessly with WorkSync Pro. Simplify management and boost your team's productivity!
@@ -46,7 +46,7 @@ const Testimonials = () => {
             <div key={index}>
               <div className="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-6 max-w-sm mx-auto  ">
                 <div className="text-gray-500 dark:text-gray-400 italic text-sm mb-4">
-                  <FaQuoteLeft className="inline text-primary mr-2" />
+                  <FaQuoteLeft className="inline text-primary dark:text-pink-500 mr-2" />
                   {item.feedback}
                 </div>
                 <div className="flex items-center gap-4 border-t pt-4">

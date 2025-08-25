@@ -7,6 +7,7 @@ import WhyChooseUs from "./WhyChooseUs";
 import FAQ from "./FAQ";
 import ResourceCategories from "./ResourceCategories";
 import { Helmet } from "react-helmet-async";
+import Newsletter from "./Newsletter";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
       <ResourceCategories />      {/* Highlight content/resources */}
       <FAQ />                     {/* Address common questions */}
       <Team />                    {/* Humanize company */}
+      <Newsletter />              {/* Capture leads */}
     </div>
   );
 };

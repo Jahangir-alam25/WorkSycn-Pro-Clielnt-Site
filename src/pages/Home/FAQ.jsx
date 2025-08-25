@@ -32,11 +32,11 @@ const FAQs = [
 
 const FAQ = () => {
   return (
-   <div className="dark:bg-gray-900 dark:text-white">
+   <div className="bg-cyan-100 dark:bg-gray-900 dark:text-white">
      <section className="py-20 w-11/12 mx-auto">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">
+          <h2 className="text-4xl font-bold text-primary dark:text-pink-500 mb-4">
             Frequently Asked Questions
           </h2>
           <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
@@ -62,7 +62,7 @@ const FAQ = () => {
         </div>
 
         <div className="text-center mt-10">
-          <button className="btn btn-primary rounded-full px-8 py-2 text-white shadow-md hover:shadow-lg transition">
+          <button className="btn btn-primary dark:bg-pink-500 hover:dark:bg-pink-700 rounded-full px-8 py-2 text-white shadow-md hover:shadow-lg transition">
             See More FAQs →
           </button>
         </div>
