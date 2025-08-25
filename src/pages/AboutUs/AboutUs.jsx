@@ -3,17 +3,17 @@ import { Helmet } from "react-helmet-async";
 
 const AboutUs = () => {
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900 dark:text-white px-4 md:px-20">
+    <section className="py-20 bg-cyan-100 dark:bg-gray-900 dark:text-white px-4 md:px-20">
       <Helmet>
         <title>About Us - WorkSync Pro</title>
       </Helmet>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold text-gray-800 dark:text-white mb-4">
-            About <span className="text-primary">WorkSync Pro</span>
+            About <span className="text-primary dark:text-pink-500">WorkSync Pro</span>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
-            At <span className="text-primary font-semibold">WorkSync Pro</span>, we redefine workforce management.
+            At <span className="text-primary font-semibold dark:text-pink-500">WorkSync Pro</span>, we redefine workforce management.
             From employee tracking to payroll automation, we empower businesses to scale and succeed.
           </p>
         </div>
@@ -31,7 +31,7 @@ const AboutUs = () => {
 
           {/* Right Text Content */}
           <div className="space-y-6 text-gray-700 dark:text-gray-300">
-            <h3 className="text-2xl font-bold text-primary">
+            <h3 className="text-2xl font-bold text-primary dark:text-pink-500">
               Empowering Teams, Simplifying Operations
             </h3>
             <p className="leading-relaxed">
@@ -43,7 +43,7 @@ const AboutUs = () => {
             <p className="leading-relaxed">
               Trusted by hundreds of businesses globally, WorkSync Pro helps companies focus on innovation—not admin tasks.
             </p>
-            <button className="btn btn-primary mt-4 rounded-lg px-6 py-2 text-lg">
+            <button className="btn btn-primary mt-4 rounded-lg px-6 py-2 text-lg dark:bg-pink-500 hover:dark:bg-pink-700">
               Explore Solutions
             </button>
           </div>

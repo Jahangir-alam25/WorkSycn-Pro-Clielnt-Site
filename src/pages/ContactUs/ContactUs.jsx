@@ -26,12 +26,12 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col items-center py-16 px-4 md:px-10">
+    <div className="min-h-screen bg-cyan-100 dark:bg-gray-900 flex flex-col items-center py-16 px-4 md:px-10">
       <Helmet>
         <title>Contact Us - WorkSync Pro</title>
       </Helmet>
       <h2 className="text-4xl font-extrabold mb-8 text-center text-gray-800 dark:text-white">
-        Contact <span className="text-primary">WorkSync Pro</span>
+        Contact <span className="text-primary dark:text-pink-500">WorkSync Pro</span>
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl w-full">
@@ -68,7 +68,7 @@ const ContactUs = () => {
             {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
           </div>
 
-          <button type="submit" className="btn btn-primary w-full">
+          <button type="submit" className="btn btn-primary w-full dark:bg-pink-500 hover:dark:bg-pink-700">
             Send Message
           </button>
         </form>
@@ -78,17 +78,17 @@ const ContactUs = () => {
           <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-4">Our Contact Information</h3>
 
           <div className="flex items-center gap-4">
-            <FaMapMarkerAlt className="text-xl text-primary" />
+            <FaMapMarkerAlt className="text-xl text-primary dark:text-white" />
             <p>Corporate Office: Dhaka, Bangladesh</p>
           </div>
 
           <div className="flex items-center gap-4">
-            <FaEnvelope className="text-xl text-primary" />
+            <FaEnvelope className="text-xl text-primary dark:text-white" />
             <p>jahangiralam.dev@gmail.com</p>
           </div>
 
           <div className="flex items-center gap-4">
-            <FaPhoneAlt className="text-xl text-primary" />
+            <FaPhoneAlt className="text-xl text-primary dark:text-white" />
             <p>+8801XXXXXXXXX</p>
           </div>
 
